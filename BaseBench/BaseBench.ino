@@ -8,9 +8,9 @@ int simDelay = 100; //simulated delay code would take
 int postDelay = 100; //delay after the Stop byte gets sent in order to give Processing time to be ready for next Start signal
 void loop() {
   Serial.write(Start);
-  delay(20);
+  delay(simDelay);
   Serial.write(Stop);
-  delay(15);
+  delay(postDelay);
 }
 
 
